@@ -3,6 +3,8 @@
   Version: 1.0
   Author : abdloulayek@embross.com or abd.koumare@gmail.com
   Created: 25/02/2024
+
+  Roaming signature RegKey: DisableRoamingSignaturesTemporaryToggle Path HKEY_CURRENT_USER\Software\Microsoft\Office.<16.0 or 8.0>\Outlook\Setup\
 #>
 
 [System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms')
@@ -19,7 +21,7 @@ catch {
   
 # Create the signatures folder and sets the name of the signature file
 $msOutlookSignatureLocation = Join-Path -Path $Env:appdata -ChildPath 'Microsoft\Signatures\'
-$signatureFileName = 'AERIA-SIGNATURE'
+$signatureFileName = 'ORGANISATION-SIGNATURE'
 $signatureFilePath = Join-Path -Path $msOutlookSignatureLocation -ChildPath $signatureFileName
 
 $publicAvailableUNC = ""
