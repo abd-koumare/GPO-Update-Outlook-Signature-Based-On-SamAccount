@@ -106,7 +106,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
         Remove-ItemProperty -Path HKCU:\\Software\\Microsoft\\Office\\16.0\\Outlook\\Setup -Name "First-Run" -ErrorAction silentlycontinue
     }
 
-    # Setting the regkeys for Outlook 2010 - Thank you AJWhite1970 for the 2010 registry keys
+    # Setting the regkeys for Outlook 2010
     if (test-path "HKCU:\\Software\\Microsoft\\Office\\14.0\\Common\\General") {
         get-item -path HKCU:\\Software\\Microsoft\\Office\\16.0\\Common\\MailSettings | new-Itemproperty -name disablesignatures -value 0 -propertytype DWord -force
         get-item -path HKCU:\\Software\\Microsoft\\Office\\14.0\\Common\\ General | new-Itemproperty -name Signatures -value signatures -propertytype string -force
