@@ -22,7 +22,7 @@ $msOutlookSignatureLocation = Join-Path -Path $Env:appdata -ChildPath 'Microsoft
 $signatureFileName = 'AERIA-SIGNATURE'
 $signatureFilePath = Join-Path -Path $msOutlookSignatureLocation -ChildPath $signatureFileName
 
-$publicAvailableUNC = "\\Warhousedc01\NETLOGON\signatures\"
+$publicAvailableUNC = ""
 $imageFileExtension = ".png"
 $userSignatureImageRemoteFile = $publicAvailableUNC + $user.samaccountname + $imageFileExtension
 
