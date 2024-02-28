@@ -1,0 +1,14 @@
+Config utilisateurs (1)
+|_Strategies
+   |_Modèles d'administration
+      |_Composants Windows
+ 	  |_Windows PowerShell
+	      |_ (Activer l'éexcution des scripts et autoriser l'éxécution des scritps locaux et les scripts signés distants)
+
+
+Config utilisateurs (2)
+|_Paramètres Windows 
+   |_Scripts (Ouverture ou Fermeture de session)
+      |_ Ouverture de session
+	   |_Scripts PowerShell
+	      |_ (Ajouter parcourir -> selection de script) et (Exécuter les scripts Windows Powershell ne dernier)
